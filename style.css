@@ -1,0 +1,260 @@
+/*
+Theme Name: SWEng Blog Custom Theme
+Author: Luke McQuade
+Description: SWEng Blog Custom Theme
+Version: 0.0.1
+*/
+
+body {
+    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+    font-size: 19px;
+    color: ghostwhite;
+    background-color: #050d18;
+    margin: auto;
+    max-width: 1024px;
+}
+
+h2 {
+    font-weight: normal;
+    margin-bottom: 0px;
+}
+
+p {
+    margin-top: 0px;
+    margin-bottom: 1em;
+}
+
+pre {
+    font-size: 15px;
+    
+    line-height: normal;
+}
+
+figure {
+    text-align: center;
+    margin: 0px;
+}
+
+figcaption {
+    text-align: center;
+}
+
+ol {
+    margin-top: -0.75em; /* workaround to better associate with leading WP block. */
+    margin-bottom: 1em;
+}
+
+/* correct wordpress-generated image overflowing */
+img {
+    max-width: 90%;
+}
+
+/* Override wordpress-injected values */
+iframe {
+    width: unset;
+    height: unset;
+}
+
+.title-container {
+    text-align: center;
+}
+
+.site-title {
+    text-shadow: -1px -1px 0 #ff7a16, 1px -1px 0 #ff7a16, -1px 1px 0 #ff7a16, 1px 1px 0 #ff7a16;
+    font-variant: small-caps;
+    margin-bottom: 0px;
+}
+
+.blog-post-title {
+    font-size: 35px;
+    margin-top:0px;
+    margin-bottom:0.25em;
+    text-align: center;
+}
+
+.blog-post-meta {
+    margin-bottom: 1em;
+    font-size: 17px;
+    font-style: italic;
+}
+
+.post-stub-title {
+    font-size: 26px;
+    margin-top:0px;
+    margin-bottom: 0px;
+}
+
+.post-stub-meta {
+    font-style: italic;
+    color: lightgrey;
+    font-size: 14px;
+}
+
+.post-stub {
+    margin-bottom: 8px;
+}
+
+.page-title {
+    font-size: 35px;
+    margin-top:0px;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.content {
+    padding-left:1em;
+    padding-right:1em;
+    padding-top:4px;
+    padding-bottom:8px;
+    border-radius: 8px;
+}
+
+.article-content {
+    line-height: 1.3em;
+}
+
+.darkened-background {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+a:link, a:visited {
+    color: unset;
+}
+
+a:hover {
+    color:#ff7a16;
+}
+
+p a:link, a:visited {
+    font-weight: bold;
+}
+
+.site-title a
+{
+    text-decoration: none;
+}
+
+.site-title a:hover
+{
+    text-shadow: none;
+}
+
+.stub-tag-collection {
+    display: inline;
+    padding-inline-start: 0px;
+}
+
+.stub-tag-item {
+    display: inline;
+    padding-left: 4px;
+    padding-right: 4px;
+
+    border-radius: 3px;
+    background: rgba(60,60,60,0.4);
+}
+
+.stub-tag-item > a {
+    text-decoration: none;
+}
+
+sup.super-c
+{
+    vertical-align:text-top;
+}
+
+.blog-footer {
+    margin-top: 16px;
+    text-align: center;
+}
+
+/* Code syntax highlighting */
+
+
+
+/* ------------------------------------------------------------------*/
+/* Override default geshi language element styles                    */
+/* Defined in e.g. plugins/wp-geshi-highlight/geshi/geshi/csharp.php */
+/* ------------------------------------------------------------------*/
+
+/* Shared */
+/* ------ */
+
+div.wp-geshi-highlight {
+    overflow-x: auto;
+    font-size: 15px;
+    line-height: normal;
+}
+
+/* line numbers */
+div.wp-geshi-highlight ol {
+    margin-top: 0px;
+    color: grey;
+}
+
+/* code line */
+div.wp-geshi-highlight pre {
+    color: ghostwhite;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+/* Comments */
+div.wp-geshi-highlight .co1 {
+    color: #00c291;
+}
+
+/* Symbols e.g. ; . */
+div.wp-geshi-highlight .sy0 {
+    color: #9b9b9b;
+}
+
+/* Brackets e.g. () [] {} */
+div.wp-geshi-highlight .br0 {
+    color: #9b9b9b;
+}
+
+/* DoSomething() .Property */
+div.wp-geshi-highlight .me1 {
+    color: #f3f18f;
+}
+
+/* 12345 */
+div.wp-geshi-highlight .nu0 {
+    color: #ef9999;
+}
+
+/* C#-specific                                       */
+/* plugins/wp-geshi-highlight/geshi/geshi/csharp.php */
+/* ------------------------------------------------- */
+
+/* "string literals" */
+div.csharp .st0 {
+    color: #df7437;
+}
+/* for, while */
+div.csharp .kw1 {
+    color: #7f7fff;
+    font-weight: unset;
+}
+/* new */
+div.csharp .kw3 {
+    color: #7f7fff;
+    font-weight: unset;
+}
+/* int, class */
+div.csharp .kw4 {
+    color: #7f7fff;
+    font-weight: unset;
+}
+
+/* SQL-specific                                   */
+/* plugins/wp-geshi-highlight/geshi/geshi/sql.php */
+/* ---------------------------------------------- */
+
+div.sql .st0 {
+    color: #ffb038;
+}
+div.sql .kw1 {
+    color:#ffe980;
+    font-weight: unset;
+}
